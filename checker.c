@@ -6,7 +6,7 @@
 /*   By: saroca-f <saroca-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 11:21:31 by saroca-f          #+#    #+#             */
-/*   Updated: 2024/03/06 14:32:55 by saroca-f         ###   ########.fr       */
+/*   Updated: 2024/05/25 18:25:14 by saroca-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ void	order_cheker(char *next_line, t_stack_node **a, t_stack_node **b)
 		rrr(a, b, true);
 	else
 		find_error(*a, *b);
+	free(next_line);
 }
 
 int	main(int argc, char **argv)
